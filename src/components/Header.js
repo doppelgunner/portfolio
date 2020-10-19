@@ -1,6 +1,7 @@
 import React from "react";
 
 import HeaderLinks from "../components/HeaderLinks";
+import { Link } from "react-router-dom";
 
 class Header extends React.Component {
   constructor(props) {
@@ -12,22 +13,22 @@ class Header extends React.Component {
       <div className="header">
         <span className="header__home">
           <span>Robert</span>
-          <span className="alt-label">Guazon</span>
+          <Link className="alt-label">Guazon</Link>
         </span>
         <HeaderLinks />
         <span className="header__social small-text">
-          <span>
+          <Link>
             <span>
-              <i class="fab fa-twitter"></i>
+              <i className="fab fa-twitter"></i>
             </span>
             <span className="sub-label">Twitter</span>
-          </span>
-          <span>
+          </Link>
+          <Link>
             <span>
-              <i class="fab fa-github"></i>
+              <i className="fab fa-github"></i>
             </span>
             <span className="sub-label">Github</span>
-          </span>
+          </Link>
           <span>Email</span>
         </span>
       </div>

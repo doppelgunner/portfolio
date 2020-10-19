@@ -32,7 +32,7 @@
   // width: 50%;
 }
 
-.header__links span {
+.header__links a {
   margin-left: 15px;
   margin-right: 15px;
 }
@@ -50,12 +50,12 @@
   flex-grow: 2;
 }
 
-.header__social > span {
+.header__social > a {
   margin-left: 15px;
   margin-right: 15px;
 }
 
-.header__social > span > span:first-child {
+.header__social > a > span:first-child {
   padding-right: 10px;
 }
 
@@ -107,4 +107,8 @@
 
 .profile__picture img {
   width: 520px;
+}
+
+.tag-container > span {
+  margin: 0px 5px;
 }
