@@ -1,0 +1,52 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
+
+html,
+body {
+  margin: 0;
+  font-family: "Source Code Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+//common classes
+.big-text {
+  font-size: 50px;
+}
+
+.small-text {
+  font-size: 14px;
+}
+
+.alt-label {
+  color: #d9d9d9;
+}
+
+.sub-label {
+  color: #828282;
+}
+
+.upper-case {
+  text-transform: uppercase;
+}
+
+.tag {
+  color: #0b1c14;
+  background-color: #64f4ac;
+  font-size: 13px;
+  font-weight: 500;
+  width: auto;
+  display: inline-block;
+  padding: 3px 11px;
+  border-radius: 3px;
+}
