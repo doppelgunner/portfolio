@@ -7,6 +7,7 @@ import Screen from "../components/Screen";
 import Header from "../components/Header";
 import Tooltip from "rc-tooltip";
 import NavDots from "../components/NavDots";
+import Card from "../components/Card";
 
 class HomePage extends React.Component {
   constructor(props) {
@@ -73,8 +74,51 @@ class HomePage extends React.Component {
             </div>
           </div>
         </Screen>
-        <Screen screens={this.state.screens} nth={2}>
-          hello
+        <Screen screens={this.state.screens} nth={2} className="screen--about">
+          <div className="bio--content">
+            <div className="skillset">
+              <Card
+                title="Back-end"
+                info="Add business logic to your app with real data"
+                icon={<i className="fas fa-database"></i>}
+                footer={<a className="page-link">5 projects</a>}
+              />
+              <Card
+                title="Front-end"
+                info="Add unique, beautiful and interactive visual elements to your app"
+                footer={<a className="page-link">5 projects</a>}
+                icon={<i className="fas fa-code"></i>}
+              />
+              <Card
+                title="Web Scraping"
+                info={`I'll scrape huge data for you and your business and store it in a database or export it in a csv file`}
+                footer={<a className="page-link">1 project</a>}
+                icon={<i className="fas fa-spider"></i>}
+              />
+            </div>
+            <div className="introduce">
+              <div className="introduce__label sub-label">Introduce</div>
+              <div className="introduce__greetings">
+                Hello! I'm Robert Guazon
+              </div>
+              <div className="introduce__motto">
+                "Every great app starts with a simple execution"
+              </div>
+              <div className="introduce__story sub-label">
+                Since the beginning of my journey as a full-stack web developer
+                3 years ago, I've done and written apps. Most of my projects
+                before I started working were mostly personal projects. Because
+                of that I was familiar with almost all the famous programming
+                languages and it helped me in my job. As of now I've done
+                numerous projects which I can be proud of. I think of jobs as a
+                learning step in order to enhance my skills.
+              </div>
+            </div>
+          </div>
+          <div className="bio--footer">
+            <img className="bio--footer_company-logo" src={"sxi-logo.svg"} />
+            <img className="bio--footer_company-logo" src={"rt-logo.png"} />
+          </div>
         </Screen>
       </div>
     );
