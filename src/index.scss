@@ -18,6 +18,7 @@ body {
 a {
   color: #fff;
   text-decoration: none;
+  cursor: pointer;
 }
 
 code {
@@ -86,4 +87,76 @@ code {
 .tag--pink {
   @extend .tag;
   background-color: #f464b7;
+}
+
+.icon-button {
+  position: relative;
+  margin-left: 27px;
+  justify-content: center;
+  display: inline-block;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.icon-button:hover {
+  color: #64f4ac;
+  background-color: #333438;
+}
+
+a:hover,
+a.active {
+  color: #64f4ac;
+}
+
+a:hover .sub-label {
+  color: #c0f1d8;
+}
+
+a.active .arrows {
+  visibility: visible;
+}
+
+a .arrows {
+  visibility: hidden;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.icon-button span {
+  display: flex;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-envelope {
+  transform: scale(1.4, 1);
+}
+
+//scroll
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.page {
+  overflow-y: scroll;
+  height: 100vh;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+}
+
+.screen {
+  height: 100vh;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+//scrollbars
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
 }

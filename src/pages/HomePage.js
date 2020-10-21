@@ -6,16 +6,22 @@ import React from "react";
 import Screen from "../components/Screen";
 import Header from "../components/Header";
 import Tooltip from "rc-tooltip";
+import NavDots from "../components/NavDots";
 
 class HomePage extends React.Component {
   constructor(props) {
     super(props);
+
+    this.state = {
+      screens: [{ id: "screen-profile" }, { id: "screen-work" }],
+    };
   }
 
   render() {
     return (
-      <div className="home">
-        <Screen>
+      <div className="page" id="home">
+        <NavDots screens={this.state.screens} />
+        <Screen screens={this.state.screens} nth={1}>
           <Header />
           <div className="profile">
             <div className="profile__info">
@@ -56,9 +62,9 @@ class HomePage extends React.Component {
                 </span>
               </span>
               <span>
-                <span className="big-text">3</span>
+                <span className="big-text">11</span>
                 <span className="small-text sub-label upper-case">
-                  projects completed on 2 countries
+                  projects completed on 3 countries
                 </span>
               </span>
             </div>
@@ -66,6 +72,9 @@ class HomePage extends React.Component {
               <img src={"r-profile-background.png"} />
             </div>
           </div>
+        </Screen>
+        <Screen screens={this.state.screens} nth={2}>
+          hello
         </Screen>
       </div>
     );

@@ -13,23 +13,27 @@ class Header extends React.Component {
       <div className="header">
         <span className="header__home">
           <span>Robert</span>
-          <Link className="alt-label">Guazon</Link>
+          <span className="alt-label">Guazon</span>
         </span>
         <HeaderLinks />
         <span className="header__social small-text">
-          <Link>
+          <a href="https://twitter.com/noobieprogrmmer" target="_blank">
             <span>
               <i className="fab fa-twitter"></i>
             </span>
             <span className="sub-label">Twitter</span>
-          </Link>
-          <Link>
+          </a>
+          <a href="https://github.com/doppelgunner" target="_blank">
             <span>
               <i className="fab fa-github"></i>
             </span>
             <span className="sub-label">Github</span>
-          </Link>
-          <span>Email</span>
+          </a>
+          <a className="icon-button" href="mailto:doppelgunner@gmail.com">
+            <span>
+              <i className="far fa-envelope"></i>
+            </span>
+          </a>
         </span>
       </div>
     );

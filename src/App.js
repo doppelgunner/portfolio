@@ -13,6 +13,9 @@ class App extends React.Component {
       <div className="app">
         <Router>
           <Switch>
+            <Route path="/contacts">
+              <HomePage />
+            </Route>
             <Route path="/">
               <HomePage />
             </Route>
