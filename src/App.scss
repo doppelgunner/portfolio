@@ -66,9 +66,37 @@
   padding-right: 10px;
 }
 
+.profile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  height: calc(100vh - 95px);
+}
+
+.profile > div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.profile > div:first-child {
+  flex-direction: column;
+  height: calc(100vh - 95px);
+  justify-content: space-around;
+  justify-content: center;
+}
+
+.profile > div:nth-child(2) {
+  justify-content: flex-start;
+}
+
 .profile__info {
-  margin-top: 132px;
-  margin-left: 200px;
+  align-self: flex-end;
+  // margin-top: 132px;
+  // margin-left: 200px;
+  margin-top: 100px;
 }
 
 .profile__motto {
@@ -82,10 +110,10 @@
 }
 
 .profile__experience {
-  position: absolute;
-  bottom: 42px;
-  left: 150px;
   display: flex;
+  align-self: flex-end;
+  margin-right: 100px;
+  margin-top: 100px;
 }
 
 .profile__experience > span {
@@ -106,14 +134,11 @@
 }
 
 .profile__picture {
-  position: absolute;
   z-index: 0;
-  right: 166px;
-  bottom: -10px;
 }
 
 .profile__picture img {
-  width: 520px;
+  // width: 520px;
 }
 
 .tag-container > span {
@@ -164,9 +189,9 @@
 }
 
 .bio--content {
-  height: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 50px;
 }
 
 .bio--content > div {
@@ -178,7 +203,8 @@
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  padding-top: 50px;
+  align-items: flex-end;
+  margin-right: 50px;
 }
 
 .card {
@@ -240,7 +266,8 @@
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  padding-top: 50px;
+  align-items: flex-start;
+  margin-left: 50px;
 }
 
 .introduce__label {
@@ -279,10 +306,16 @@
 }
 
 .bio--footer {
-  position: absolute;
-  bottom: 30px;
   justify-content: center;
   display: flex;
   align-items: center;
   width: 100%;
+  margin-top: 40px;
+}
+
+.screen--about > div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
