@@ -11,7 +11,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="app">
-        <Router>
+        <Router basename="/portfolio">
           <Switch>
             <Route path="/contacts">
               <HomePage />
