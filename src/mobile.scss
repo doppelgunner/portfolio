@@ -124,3 +124,21 @@
     margin-top: 29px;
   }
 }
+
+@media only screen and (max-height: 568px) {
+  .big-text {
+    font-size: 25px;
+  }
+
+  .profile__experience .big-text {
+    font-size: 16px;
+  }
+
+  .profile__experience > span {
+    margin: unset;
+  }
+
+  .profile__experience > span > span {
+    width: unset !important;
+  }
+}
