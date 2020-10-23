@@ -8,10 +8,26 @@ class Header extends React.Component {
 
   static defaultProps = {
     links: [
-      { link: "/", name: "Services" },
-      { link: "/works", name: "Works" },
-      { link: "/notes", name: "Notes" },
-      { link: "/contacts", name: "Contacts" },
+      {
+        link: "/",
+        name: "Services",
+        icon: <i className="fas fa-user-cog"></i>,
+      },
+      {
+        link: "/works",
+        name: "Works",
+        icon: <i className="fas fa-folder-open"></i>,
+      },
+      {
+        link: "/notes",
+        name: "Notes",
+        icon: <i className="fas fa-sticky-note"></i>,
+      },
+      {
+        link: "/contacts",
+        name: "Contacts",
+        icon: <i className="fas fa-address-book"></i>,
+      },
     ],
   };
 
@@ -27,6 +43,7 @@ class Header extends React.Component {
               activeClassName="active"
             >
               <span className="arrows">{"<"}</span>
+              {link.icon}
               {link.name}
               <span className="arrows">{">"}</span>
             </NavLink>
