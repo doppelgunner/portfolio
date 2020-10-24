@@ -7,6 +7,17 @@ class App extends React.Component {
     super(props);
   }
 
+  componentDidMount() {
+    const appHeight = () => {
+      document.documentElement.style.setProperty(
+        "--app-height",
+        `${window.innerHeight}px`
+      );
+    };
+    window.addEventListener("resize", appHeight);
+    appHeight();
+  }
+
   render() {
     return (
       <div className="app">

@@ -105,7 +105,7 @@ class HomePage extends React.Component {
                   Hello! I'm Robert Guazon
                 </div>
                 <div className="introduce__motto">
-                  "Every great app starts with a simple execution"
+                  "Every great app started as an idea"
                 </div>
                 <div className="introduce__story sub-label">
                   Since the beginning of my journey as a full-stack web

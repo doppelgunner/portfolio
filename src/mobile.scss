@@ -9,13 +9,13 @@
   }
 
   .profile {
-    height: calc(100vh - 211px);
+    height: calc(var(--app-height) - 211px);
   }
 
   .profile > div:first-child {
     width: 100%;
     justify-content: space-around;
-    height: calc(100vh - 211px);
+    height: calc(var(--app-height) - 211px);
   }
 
   .profile > div:nth-child(2) {

@@ -1,6 +1,6 @@
 .screen {
   background-color: #2d2e32;
-  height: 100vh;
+  height: var(--app-height);
   width: 100%;
   color: #efefef;
   overflow: hidden;
@@ -75,7 +75,7 @@
   justify-content: space-around;
   align-items: center;
   height: 100%;
-  height: calc(100vh - 95px);
+  height: calc(var(--app-height) - 95px);
 }
 
 .profile > div {
@@ -87,7 +87,7 @@
 
 .profile > div:first-child {
   flex-direction: column;
-  height: calc(100vh - 95px);
+  height: calc(var(--app-height) - 95px);
   justify-content: space-around;
   justify-content: center;
 }

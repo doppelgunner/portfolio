@@ -1,3 +1,7 @@
+:root {
+  --app-height: 100vh;
+}
+
 /*start of common*/
 a {
   color: #fff;
@@ -121,20 +125,20 @@ a .arrows {
 
 //scroll
 body {
-  height: 100vh;
+  height: var(--app-height);
   overflow: hidden;
 }
 
 .page {
   overflow-y: scroll;
-  height: 100vh;
+  height: var(--app-height);
   scroll-snap-type: mandatory;
-  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-points-y: repeat(var(--app-height));
   scroll-snap-type: y mandatory;
 }
 
 .screen {
-  height: 100vh;
+  height: var(--app-height);
   scroll-snap-align: start;
   position: relative;
 }
